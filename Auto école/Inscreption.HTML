@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Elite Driving</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Inscreption</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="courses.html">Les cours</a>
+        <a href="details.html">Détails du cours</a>
+        <a href="contact.html">Contact</a>
+        <a href="Inscreption.HTML">Inscreption</a>
+    </nav>
+
+    <div id="layout">
+        <div class="card">
+            <h2>Formulaire d'<span>inscription</span></h2>
+            <p class="centrer" style="margin-bottom: 30px;">Prêt à prendre le volant ? Envoyez-nous vos coordonnées.</p>
+            
+            <form id="contactForm">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <label>Nom et Prénom :</label>
+                        <input type="text" placeholder="Votre nom complet" required>
+                    </div>
+                    <div>
+                        <label>Email :</label>
+                        <input type="email" placeholder="votre@email.com" required>
+                    </div>
+                </div>
+
+                <label>Téléphone :</label>
+                <input type="tel" placeholder="05XX XX XX XX" required>
+
+                <label>Type de formation souhaité :</label>
+                <select>
+                    <option>Permis B (Auto)</option>
+                    <option>Permis A (Moto)</option>
+                    <option>Code de la route uniquement</option>
+                    <option>Perfectionnement</option>
+                </select>
+
+                <label>Votre message :</label>
+                <textarea rows="5" placeholder="Posez vos questions ici..."></textarea>
+
+                <div class="centrer" style="margin-top: 20px;">
+                    <button type="submit" class="btn-elite">Envoyer ma demande</button>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ELITE DRIVING SCHOOL.</p>
+    </footer>
+    <script src="index.tsx" type="module"></script>
+</body>
+</html>
